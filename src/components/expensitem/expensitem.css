@@ -1,0 +1,44 @@
+.expensitem-div {
+    /* border: 2px solid green;
+     */
+     border-radius:10px;
+    margin-bottom: 20px;
+    background: #4B4B4B;
+    margin: auto;
+    width: 60rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price{
+   
+padding: 10px 10px;
+gap: 10px;
+
+width: 90px;
+height: 30px;
+
+
+background: #40005D;
+border: 1px solid #FFFFFF;
+border-radius: 10px;
+margin-right: 10px;
+}
+.container-dateandtitle {
+    display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+.date-text {
+margin-left: 10px;
+margin-right: 30px;
+width: 30px;
+height: 60px;
+border: 2px solid white;
+padding: 10px 15px;
+align-items: center;
+}

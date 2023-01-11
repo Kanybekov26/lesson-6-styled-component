@@ -1,0 +1,16 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+.input {
+    width: 300px;
+    height: 25px;
+}
+.lable {
+    font-weight: bold;
+    color:rgb(46, 43, 43);
+    margin-bottom: 5px;
+}

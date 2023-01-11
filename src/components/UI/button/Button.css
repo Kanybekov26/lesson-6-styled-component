@@ -1,0 +1,45 @@
+.btnAdd {
+    color: wheat;
+    background: #4A026B;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.btnAdd:hover{
+    background: #600A87;
+}
+.btnAdd:active {
+    background: #520B73;
+}
+.btnСancel{
+    color: wheat;
+    background: #4A026B;
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.btnСancel:hover {
+    background: #600A87;
+}
+
+.btnСancel:active {
+    background: #520B73;
+}
+.btnСheck {
+    color: wheat;
+    background: #4A026B;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 100px;
+
+}
+.btnСheck:hover {
+    background: #600A87;
+}
+.btnСheck:active {
+    background: #520B73;
+}
