@@ -6,17 +6,17 @@ import { useState } from 'react';
 
 function App() {
 
-const [expenses,setExpenses] =useState([
-  // {
-  //   title:"Туалетный бумага",
-  //   price:300,
-  //   date: new Date()
-  // },
-  // {
-  //   title:" zariatnik",
-  //   price:400,
-  //   date: new Date()
-  // }
+const [expenses,setExpenses] = useState([
+  {
+    title:"Туалетный бумага",
+    price:300,
+    date: new Date()
+  },
+  {
+    title:" zariatnik",
+    price:400,
+    date: new Date() 
+  }
 ])
 
   const addNewExpensehandler = (data) => {

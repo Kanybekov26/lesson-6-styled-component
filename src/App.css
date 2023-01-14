@@ -1,6 +1,10 @@
+html{
+  background-color: rgb(44, 43, 43);
+
+}
+
 .App {
   text-align: center;
-  background-color: rgb(44, 43, 43);
 }
 
 .App-logo {

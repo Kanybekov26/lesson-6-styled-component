@@ -1,0 +1,16 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+}
+.filter-text {
+    color: white;
+}
+.select {
+    width: 124px;
+height: 43px;
+padding-left: 24px;
+padding-right: 18px;
+background: #FFFFFF;
+border-radius: 6px;
+}
+

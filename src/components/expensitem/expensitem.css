@@ -10,6 +10,7 @@
     justify-content:space-between;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .price{
@@ -33,12 +34,19 @@ margin-right: 10px;
  align-items: center;
 }
 
-.date-text {
-margin-left: 10px;
-margin-right: 30px;
+/* .date-text {
+
 width: 30px;
 height: 60px;
+align-items: center;
+} */
+
+.div-date {
+    display: flex;
+    flex-direction: column;
 border: 2px solid white;
 padding: 10px 15px;
-align-items: center;
+margin-left: 10px;
+margin-right: 30px;
+
 }
