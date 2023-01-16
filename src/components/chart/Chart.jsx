@@ -3,6 +3,10 @@ import "../chart/Chart.css"
 import React from 'react'
 import Chartbar from '../chartbar/Chartbar'
 
+
+
+
+
 const Chart = ({items}) => {
   const maximumPrice = 2000
   const months = [
