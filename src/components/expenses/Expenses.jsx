@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import "../expenses/expenses.css"
+// import "../expenses/expenses.css"
 import { ExpensItem } from '../expensitem/ExpensItem'
 import ExpensesFilter from '../expensesFilter/ExpensesFilter'
 import Chart from '../chart/Chart'
+import styled from 'styled-components'
 export const Expenses = ({expenses}) => {
 
  const [selectYear,setSelectYear] = useState("2023")
@@ -20,7 +21,7 @@ export const Expenses = ({expenses}) => {
  console.log(FiltredYear);
 
   return (
-    <ul className='ul'>
+    <Ul>
       <ExpensesFilter
       value={selectYear}
       onChange={yearChangeHandler}
@@ -38,6 +39,15 @@ export const Expenses = ({expenses}) => {
                 />
             )
         })}
-    </ul>
+    </Ul>
   )
 }
+
+const Ul = styled.ul`
+  padding: 20px;
+    /* border: 2px solid blueviolet; */
+    background: #1F1F1F;
+    width: 61.7rem;
+    margin: auto;
+    border-radius: 20px;
+`

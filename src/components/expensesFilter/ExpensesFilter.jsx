@@ -1,22 +1,41 @@
 import React from 'react'
-import "../expensesFilter/Expensesfilter.css"
+import styled  from 'styled-components'
 
 const ExpensesFilter = ({value,onChange}) => {
   return (
     <div>
-        <div className='filter-container'>
-            <label className='filter-text'>Фильтр по году</label>
-           <select className='select' value={value} onChange={onChange}>
+        <FilterContainer>
+            <Label>Фильтр по году</Label>
+           <Select value={value} onChange={onChange}>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>
 
-           </select>
-        </div>
+           </Select>
+        </FilterContainer>
        
     </div>
   )
 }
 
 export default ExpensesFilter
+
+
+const FilterContainer = styled.div`
+  display: flex;
+    justify-content: space-between;
+`
+
+const Label = styled.label`
+   color: white;
+`
+
+const Select = styled.select`
+   width: 124px;
+height: 43px;
+padding-left: 24px;
+padding-right: 18px;
+background: #FFFFFF;
+border-radius: 6px;
+`

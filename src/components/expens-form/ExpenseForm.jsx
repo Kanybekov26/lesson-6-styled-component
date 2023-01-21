@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Button} from '../UI/button/Button'
 import Forminput from '../UI/forminput/Forminput'
-import "../expens-form/Expensform.css"
+import styled from "styled-components"
 
  export const ExpenseForm = ({onShoForm,onNewExpenseadd}) => {
     // event.preventDefault()
@@ -10,7 +10,7 @@ import "../expens-form/Expensform.css"
    const [price, setprice]= useState("");
    const [date, setdate]= useState("");
 
-  
+
     const cancelHanler = (event) => {
         event.preventDefault()
         onShoForm()
@@ -52,8 +52,8 @@ const expense = {
 
   return (
     <form>
-      <div className='container'>
-      <div className='container-input'>
+      <Container>
+      <ContainerInput>
       <Forminput
    labelName={"Название"}
    inputType={"text"}
@@ -69,8 +69,8 @@ const expense = {
    value={price}
     onChange={priceInputChangeHandler}
    />
-      </div>
-    <div className='container-input-data'>
+      </ContainerInput>
+    <ContainerInputDate>
     <Forminput
      labelName={"Дата"}
      inputType={"date"}
@@ -79,25 +79,45 @@ const expense = {
    value={date}
   onChange={dateInputChangeHandler}
      />
-    </div>
+    </ContainerInputDate>
    
-      </div>
+      </Container>
      
-     <div className='div-button'>
+     <ContainerButton>
      <Button 
      style="btnСancel"
      onClick={cancelHanler}
      >Отмена</Button>
-     <Button onClick={saveHandler}
-     
-    style="btnСheck"
-     
-     >Сохронить</Button>
-     </div>
-     
 
+     <Button onClick={saveHandler}
+    style="btnСheck"
+     >Сохронить</Button>
+     </ContainerButton>
+     
     </form>
     
     
   )
 }
+
+const Container = styled.div`
+   display: flex;
+    flex-direction: column;
+`
+
+const ContainerInput = styled.div`
+     display: flex;
+    flex-direction: row;
+    justify-content:center ;
+`
+
+const ContainerInputDate = styled.div`
+  margin-left: 9.625rem;
+`
+
+const ContainerButton = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+`

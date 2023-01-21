@@ -1,8 +1,7 @@
 
-import "../chart/Chart.css"
 import React from 'react'
 import Chartbar from '../chartbar/Chartbar'
-
+import styled from "styled-components"
 
 
 
@@ -66,7 +65,7 @@ const Chart = ({items}) => {
   })
   console.log(months);
   return (
-    <div className='chart'>
+    <ChartBar>
      {months.map((el) => {
       console.log(el);
    return(
@@ -81,8 +80,25 @@ const Chart = ({items}) => {
       
        
 
-    </div>
+    </ChartBar>
   )
 }
 
 export default Chart
+
+
+
+
+
+
+
+
+const ChartBar = styled.div`
+   padding: 1rem;
+   border-radius: 12px;
+   background-color: #f8dfff;
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   height: 10rem;
+`
