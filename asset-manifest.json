@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lesson-6-styled-component/static/css/main.5bc8e168.css",
+    "main.js": "/lesson-6-styled-component/static/js/main.a4929505.js",
+    "index.html": "/lesson-6-styled-component/index.html",
+    "main.5bc8e168.css.map": "/lesson-6-styled-component/static/css/main.5bc8e168.css.map",
+    "main.a4929505.js.map": "/lesson-6-styled-component/static/js/main.a4929505.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bc8e168.css",
+    "static/js/main.a4929505.js"
+  ]
+}
